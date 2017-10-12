@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:: Sample Application ::</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/menu.css" rel="stylesheet">
+
+<script src="js/menu.js"></script>
+</head>
+
+
+
+<body>
+<!-- CONTAINER -->
+<div id="container">
+<!-- NAVIGATION -->
+<ul id="menu">
+    	<li><a href="#" title="Projects">Electronics</a>
+		<ul>
+			<li><a href="#" onclick="displaydiv('Washing Machines')" title="Washing Machines">Washing Machines</a></li>
+			<li><a href="#" title="Active projects">Televisions</a>
+				<ul>
+					<li><a href="#" onclick="displaydiv('Leaf industries')" title="Leaf industries">Sony</a></li>
+					<li><a href="#" onclick="displaydiv('Samsung')" title="Samsung">Samsung</a></li>
+                    <li><a href="#" onclick="displaydiv('LG')" title="LG">LG</a></li>
+                    <li><a href="#" onclick="displaydiv('Hisense')" title="Hisense">Hisense</a></li>
+				</ul>
+            </li>
+            <li><a href="#" onclick="displaydiv('Refrigerators')" title="Refrigerators">Refrigerators</a></li>
+            <li><a href="#" onclick="displaydiv('Air conditioners')" title="Air conditioners">Air conditioners</a></li>
+            <li><a href="#" onclick="displaydiv('Small home appliances')" title="Small home appliances">Small home appliances</a></li>
+            <li><a href="#" onclick="displaydiv('Health care appliances')" title="Health care appliances">Health care appliances</a></li>
+		</ul>
+	</li>
+	<li><a href="#" onclick="displaydiv('Appliances')" title="Homepage" class="selected">Appliances</a></li>
+	<li><a href="#" onclick="displaydiv('Baby &amp; Kids')" title="About us">Baby &amp; Kids</a></li>
+    <li><a href="#" onclick="displaydiv('Home &amp; Furniture')" title="Contact">Home &amp; Furniture</a></li>
+    <li><a href="#" onclick="displaydiv('Books')" title="About us">Books</a></li>
+    <li><a href="#" onclick="displaydiv('Gaming &amp; Accessories')" title="About us">Gaming &amp; Accessories</a></li>
+
+</ul>
+<!-- /NAVIGATION -->	
+</div>
+<!-- /CONTAINER -->
+
+<div id="subContainer" class="inv">
+
+
+</div>
+
+
+<script>
+function displaydiv(str)
+{
+    document.getElementById("subContainer").innerHTML = str;
+}
+</script>
+</body>
+
+</html>
